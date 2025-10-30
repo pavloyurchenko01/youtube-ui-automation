@@ -1,0 +1,7 @@
+<suite name="YouTube Suite" verbose="1" parallel="false">
+    <test name="YouTubeTest">
+        <classes>
+            <class name="tests.YouTubeTest"/>
+        </classes>
+    </test>
+</suite>
