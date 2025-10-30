@@ -19,6 +19,7 @@ youtube-ui-automation/
             │   ├── BasePage.java
             │   ├── HomePage.java
             │   ├── ResultPage.java
+            |   |── VideoPage.java
             │   └── ChannelPage.java
             ├── tests/               # Тестові класи
             │   ├── BaseTest.java
@@ -61,7 +62,7 @@ mvn clean test -DbaseUrl=https:/youtube.com -Dbrowser=chrome -Dheadless=true
 ```
 
 > `baseUrl' можна змінювати для різних середовищ
-> `browser` підтримує Chrome та Firefox
+> `browser` підтримує Chrome, Firefox та Edge
 > `headless=true` дозволяє запуск без відкриття UI
 
 ___
@@ -73,6 +74,7 @@ ___
 | **BasePage** | спільна логіка для сторінок (waits, scroll, isClick, `BASE_URL`) |
 | **HomePage**| відкриття головної сторінки та введення пошукового запиту |
 | **ResultPage** | вибір відео зі сторінки результатів |
+| **VideoPage** |  клік на автора відео та перехід на канал |
 | **ChanelPage** | дії на сторінці каналу, перевірка поп-апу "Увійти" |
 | **DriveFactory** | створення WebDriver з параметрами браузера |
 | **BaseTest** | ініціалізація / закриття драйвера|
